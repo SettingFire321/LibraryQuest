@@ -207,10 +207,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _opacity: 1
   _imageryType: 0
-  _areRoadsEnabled: 0
+  _areRoadsEnabled: 1
   _areLabelsEnabled: 0
   _isHillShadingEnabled: 1
-  _imageryStyle: 0
+  _imageryStyle: 7
 --- !u!114 &1278039698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
   _mapSession: {fileID: 1278039700}
   _mapEdgeColor: {r: 0.62352943, g: 0.64705884, b: 0.69411767, a: 1}
   _mapEdgeColorFadeDistance: 0.02
-  _detailOffset: 0
+  _detailOffset: 1
   _numElevationTileFallbackLods: 2
   _requestTilesAroundView: 0
   _center:
@@ -252,7 +252,7 @@ MonoBehaviour:
   _zoomLevel: 16.4
   _minimumZoomLevel: 1
   _maximumZoomLevel: 20
-  _mapTerrainType: 0
+  _mapTerrainType: 1
   _mapShape: 0
   _localMapDimension: {x: 1, y: 1.9}
   _localMapRadius: 0.5
@@ -290,7 +290,7 @@ MonoBehaviour:
   _developerKey: 
   _developerKeySource: 1
   _showMapDataInEditor: 1
-  _languageOverride: 42
+  _languageOverride: 10
   _languageChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -303,13 +303,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1278039693}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -0.02, y: -0.02, z: -0.4465}
-  m_LocalScale: {x: 10.132745, y: 10.132745, z: 10.132745}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: -0.70710677, y: 0, z: 0, w: 0.70710677}
+  m_LocalPosition: {x: 0.01, y: 0.01, z: -0.45}
+  m_LocalScale: {x: 5.3836093, y: 5.3836093, z: 5.3836093}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -180, y: 90, z: -90}
+  m_LocalEulerAnglesHint: {x: -90, y: 270, z: -270}
 --- !u!1 &2098052111
 GameObject:
   m_ObjectHideFlags: 0
