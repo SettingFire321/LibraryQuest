@@ -255,7 +255,7 @@ MonoBehaviour:
     _list:
     - {fileID: 1278039696}
   _hideTileLayerComponents: 1
-  _mapColliderType: 1
+  _mapColliderType: 2
   _mapCollider: {fileID: 1278039705}
 --- !u!114 &1278039700
 MonoBehaviour:
@@ -364,8 +364,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 0.3, z: 1.9}
-  m_Center: {x: 0, y: 0.15, z: 0}
+  m_Size: {x: 1, y: 0.315, z: 1.9}
+  m_Center: {x: 0, y: 0.1575, z: 0}
 --- !u!1 &2098052111
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,6 +377,7 @@ GameObject:
   - component: {fileID: 2098052114}
   - component: {fileID: 2098052113}
   - component: {fileID: 2098052112}
+  - component: {fileID: 2098052115}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -458,6 +459,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2098052115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098052111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b75fca934d9dd41928fdc3973eefad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lat: 0
+  lon: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
