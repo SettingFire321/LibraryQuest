@@ -138,7 +138,10 @@ GameObject:
   - component: {fileID: 1278039697}
   - component: {fileID: 1278039696}
   - component: {fileID: 1278039695}
-  - component: {fileID: 1278039694}
+  - component: {fileID: 1278039703}
+  - component: {fileID: 1278039702}
+  - component: {fileID: 1278039704}
+  - component: {fileID: 1278039705}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -146,27 +149,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &1278039694
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278039693}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 0.3, z: 1.9}
-  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!114 &1278039695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,10 +229,10 @@ MonoBehaviour:
   _numElevationTileFallbackLods: 2
   _requestTilesAroundView: 0
   _center:
-    _latitude: 37.776
-    _longitude: -122.449
-  _zoomLevel: 16.4
-  _minimumZoomLevel: 1
+    _latitude: 37.73
+    _longitude: -122.437
+  _zoomLevel: 11
+  _minimumZoomLevel: 11
   _maximumZoomLevel: 20
   _mapTerrainType: 1
   _mapShape: 0
@@ -274,7 +256,7 @@ MonoBehaviour:
     - {fileID: 1278039696}
   _hideTileLayerComponents: 1
   _mapColliderType: 1
-  _mapCollider: {fileID: 1278039694}
+  _mapCollider: {fileID: 1278039705}
 --- !u!114 &1278039700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,12 +286,86 @@ Transform:
   m_GameObject: {fileID: 1278039693}
   serializedVersion: 2
   m_LocalRotation: {x: -0.70710677, y: 0, z: 0, w: 0.70710677}
-  m_LocalPosition: {x: 0.04, y: 0.01, z: -0}
-  m_LocalScale: {x: 5.700704, y: 5.700704, z: 5.700704}
+  m_LocalPosition: {x: 0.04, y: 0.0099996, z: 0}
+  m_LocalScale: {x: 15, y: 15, z: 15}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 270, z: -270}
+--- !u!114 &1278039702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278039693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16b1021f9cb8215439219e0216e34c1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 2098052113}
+--- !u!114 &1278039703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278039693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b303ffbed90191b4dbbf76b03bf83d80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationSpeed: 3.5
+  _panSpeed: 0.5
+  _onTapAndHold:
+    m_PersistentCalls:
+      m_Calls: []
+  _onDoubleTap:
+    m_PersistentCalls:
+      m_Calls: []
+  _onInteractionStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  _onInteractionEnded:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1278039704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278039693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f516b169d1e6394fa3bbaed1fcbe214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 2098052113}
+  _zoomSpeed: 5
+--- !u!65 &1278039705
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278039693}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.3, z: 1.9}
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &2098052111
 GameObject:
   m_ObjectHideFlags: 0
