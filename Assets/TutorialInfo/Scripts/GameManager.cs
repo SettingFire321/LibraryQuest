@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public static SortedList libraryNames;
+    public TextMeshProUGUI libraryDesc;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         libraryNames = new SortedList();
         setLibraries();
